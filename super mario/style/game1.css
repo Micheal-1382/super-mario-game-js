@@ -1,0 +1,1002 @@
+body{
+    animation: anim_1 5s infinite alternate;
+    animation-fill-mode: both;
+    /* position: relative; */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    cursor: default;
+    user-select: none;
+}
+@keyframes anim_1{
+    0%{
+        background: rgb(255, 97, 72);
+    }
+    50%{
+        background: rgb(255, 174, 0);
+    }
+    100%{
+        background: rgb(199, 255, 31);
+    }
+}
+#first_audio{
+    display: none;
+}
+.window{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.screen{
+    position: absolute;
+    background: linear-gradient(rgb(255, 156, 44), #fff 100%);
+    border-radius: 5px;
+    height: 650px;
+    width: 1000px;
+    /* margin: 45px auto; */
+    top: 50%;
+    left: 50%;
+    margin-top: -325px;
+    margin-left: -500px;
+    overflow: hidden;
+}
+.holder{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.box_bottom{
+    position: absolute;
+    /* border: 1px solid #000; */
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+.box_bottom > li{
+    animation: anim_2 1s infinite alternate;
+    position: relative;
+    background: yellow;
+    border-radius: 5px;
+    height: 100%;
+    width: 4%;
+    padding-left: 1%;
+    float: left;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bolder;
+    z-index: 100;
+    box-shadow: 0 0 1px 1px #000 inset;
+    transform: rotate(90deg);
+    cursor: default;
+    user-select: none;
+}
+@keyframes anim_2{
+    0%{
+        line-height: 38px;
+        padding-left: 0.9%;
+    }
+    50%{
+        line-height: 34px;
+        padding-left: 1.1%;
+    }
+    100%{
+        line-height: 39px;
+        padding-left: 1%;
+    }
+}
+.box-mid{
+    position: absolute;
+    /* border: 1px solid #000; */
+    bottom: 210px;
+    left: 0;
+    height: 40px;
+    width: 100%;
+}
+.box-mid > li{
+    animation: anim_3 1s infinite alternate;
+    position: relative;
+    background: yellow;
+    border-radius: 5px;
+    height: 100%;
+    width: 40px;
+    padding-left: 12px;
+    float: left;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bolder;
+    z-index: 100;
+    box-shadow: 0 0 1px 1px #000 inset;
+    transform: rotate(90deg);
+    user-select: none;
+}
+.box-mid > li:nth-child(12){opacity: 0;}
+.box-mid > li:nth-child(13){opacity: 0;}
+.box-mid > li:nth-child(14){opacity: 0;}
+.box-mid > li:nth-child(15){opacity: 0;}
+.box-mid > li:nth-child(16){opacity: 0;}
+@keyframes anim_3{
+    0%{
+        line-height: 38px;
+        padding-left: 12px;
+    }
+    50%{
+        line-height: 34px;
+        ppadding-left: 14px;
+    }
+    100%{
+        line-height: 39px;
+        padding-left: 10px;
+    }
+}
+
+.under-mid{
+    position: absolute;
+    /* border: 1px solid #000; */
+    bottom: 380px;
+    right: 0;
+    height: 40px;
+    width: 720px;
+}
+.under-mid > li{
+    animation: anim_18 1s infinite alternate;
+    position: relative;
+    background: yellow;
+    border-radius: 5px;
+    height: 100%;
+    width: 40px;
+    padding-left: 12px;
+    float: left;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bolder;
+    z-index: 100;
+    box-shadow: 0 0 1px 1px #000 inset;
+    transform: rotate(90deg);
+}
+@keyframes anim_18{
+    0%{
+        line-height: 38px;
+        padding-left: 12px;
+    }
+    50%{
+        line-height: 34px;
+        ppadding-left: 14px;
+    }
+    100%{
+        line-height: 39px;
+        padding-left: 10px;
+    }
+}
+.turtel_1{
+    animation: anim_7 6s linear infinite;
+    position: absolute;
+    background: url(../img/aefaf47caa61782884b98d4b0a6f9304_w200.gif);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 60px;
+    width: 60px;
+    bottom: 250px;
+    right: 960px;
+    transform: rotateY(0deg);
+}
+@keyframes anim_7{
+    0%{
+        right: 310px;
+        transform: rotateY(0deg);
+    }
+    48%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        right: -100px;
+        transform: rotateY(180deg);
+    }
+    98%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        right: 310px;
+        transform: rotateY(0deg);
+    }
+}
+
+.turtel_2{
+    animation: anim_8 5s linear infinite;
+    /* animation-delay: 1s; */
+    position: absolute;
+    background: url(../img/aefaf47caa61782884b98d4b0a6f9304_w200.gif);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 60px;
+    width: 60px;
+    bottom: 250px;
+    right: 300px;
+    transform: rotateY(180deg);
+}
+@keyframes anim_8{
+    0%{
+        right: -200px;
+        transform: rotateY(180deg);
+    }
+    43%{
+        transform: rotateY(180deg);
+    }
+    45%{
+        right: 310px;
+        transform: rotateY(0deg);
+    }
+    93%{
+        right: -100px;
+        transform: rotateY(0deg);
+    }
+    95%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        right: -200px;
+        transform: rotateY(180deg);
+    }
+}
+
+.turtel_3{
+    animation: anim_9 6s linear infinite;
+    /* animation-delay: 1s; */
+    position: absolute;
+    background: url(../img/aefaf47caa61782884b98d4b0a6f9304_w200.gif);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 60px;
+    width: 60px;
+    bottom: 250px;
+    right: 400px;
+    transform: rotateY(180deg);
+}
+@keyframes anim_9{
+    0%{
+        right: -250px;
+        transform: rotateY(180deg);
+    }
+    43%{
+        transform: rotateY(180deg);
+    }
+    45%{
+        right: 310px;
+        transform: rotateY(0deg);
+    }
+    88%{
+        right: -100px;
+        transform: rotateY(0deg);
+    }
+    90%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        right: -250px;
+        transform: rotateY(180deg);
+    }
+}
+#back_1{
+    position: absolute;
+    background: url(../img/back-button-4181668.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    left: 20px;
+    transition: 0.5s;
+    transform: scale(1);
+    overflow: hidden;
+    cursor: pointer;
+}
+#back_1:hover{
+    transform: scale(1.2);
+}
+
+#back_1 > a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+#setting_icon{
+    position: absolute;
+    background: url(../img/738853.png);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    right: 20px;
+    transition: 0.5s;
+    transform: scale(1);
+    cursor: pointer;
+}
+#setting_icon:hover{
+    transform: scale(1.2);
+}
+input{
+    display: none;
+}
+input:checked ~ #setting{
+    animation: anim_15 3s linear both; 
+}
+input ~ #setting{
+    animation: anim_16 2s linear both; 
+}
+#setting{
+    /* animation: anim_15 2s linear both; */
+    position: absolute;
+    background: rgba(77, 255, 0, 0.5);
+    border-radius: 0 0 0 50px;
+    height: 50px;
+    width: 200px;
+    top: -100px;
+    right: 100px;
+    padding-left: 30px;
+    transition: 0.5s;
+    transform-origin: 100% 100%;
+    transform: rotate(-180deg);
+}
+@keyframes anim_15{
+    0%{
+        transform: rotate(-180deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    55%{
+        transform: rotate(-135deg);
+    }
+    78%{
+        transform: rotate(-65deg);
+    }
+    100%{
+        transform: rotate(-90deg) translateX(0);
+    }
+}
+@keyframes anim_16{
+    0%{
+        transform: rotate(-90deg) translateX(0);
+    }
+    100%{
+        transform: rotate(-90deg) translateX(250px);
+    }
+}
+#setting > div{
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transition: 0.2s;
+    transform: rotate(90deg) scale(1);
+    cursor: pointer;
+}
+#setting > div:hover{
+    transform: rotate(90deg) scale(1.1);
+}
+#setting > div:nth-child(1){
+    background: url(../img/4181163.jpg) 50% 50%;
+    background-size: 100% 100%;
+}
+#setting > div:nth-child(2){
+    background: url(../img/4208490.jpg) 50% 50%;
+    background-size: 150% 150%;
+}
+#coin_1{
+    animation: anim_19 0.5s infinite alternate;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 140px;
+    right: 325px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+@keyframes anim_19{
+    0%{
+        transform: rotateY(0deg);
+        box-shadow: 0 0 20px 1px yellow;
+    }
+    25%{
+        box-shadow: 0 0 2px 1px yellow;
+    }
+    50%{
+        box-shadow: 0 0 20px 1px yellow;
+    }
+    75%{
+        box-shadow: 0 0 2px 1px yellow;
+    }
+    100%{
+        transform: rotateY(180deg);
+        box-shadow: 0 0 20px 1px yellow;
+    }
+}
+
+#coin_2{
+    animation: anim_19 0.5s infinite alternate-reverse;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 140px;
+    right: 210px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+#coin_3{
+    animation: anim_19 0.5s infinite alternate;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 140px;
+    right: 125px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+#coin_4{
+    animation: anim_19 0.5s infinite alternate-reverse;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 310px;
+    left: 322px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+#coin_5{
+    animation: anim_19 0.5s infinite alternate;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 310px;
+    left: 200px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+#coin_6{
+    animation: anim_19 0.5s infinite alternate-reverse;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 310px;
+    left: 5px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+#coin_7{
+    animation: anim_19 0.5s infinite alternate-reverse;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 510px;
+    left: 400px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+#coin_8{
+    animation: anim_19 0.5s infinite alternate-reverse;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 510px;
+    left: 520px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+#coin_9{
+    animation: anim_19 0.5s infinite alternate-reverse;
+    position: absolute;
+    border: 2px solid rgb(255, 174, 0);
+    background: gold;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    bottom: 320px;
+    left: 642px;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    box-shadow: 0 0 20px 1px yellow;
+}
+.culmn{
+    animation: anim_20 1s infinite alternate;
+    position: absolute;
+    background: url(../img/purzen-A-green-cartoon-pipe.png);
+    background-size: 100% 100%;
+    height: 150px;
+    width: 100px;
+    bottom: 410px;
+    right: 200px;
+    z-index: 90;
+}
+@keyframes anim_20{
+    0%{
+        height: 150px;
+    }
+    100%{
+        height: 135px;
+    }
+}
+
+.culmn1{
+    animation: anim_20 1s infinite alternate;
+    position: absolute;
+    background: url(../img/purzen-A-green-cartoon-pipe.png);
+    background-size: 100% 100%;
+    height: 150px;
+    width: 80px;
+    bottom: 220px;
+    left: 50px;
+    z-index: 90;
+}
+.culmn2{
+    animation: anim_200 1s infinite alternate;
+    position: absolute;
+    background: url(../img/end-of-the-road-sign-logo-457FFF5EE0-seeklogo.com.png);
+    background-size: 100% 100%;
+    height: 35px;
+    width: 60px;
+    bottom: 435px;
+    right: 5px;
+    /* z-index: 90; */
+}
+@keyframes anim_200{
+    0%{
+        height: 35px;
+    }
+    100%{
+        height: 40px;
+    }
+}
+.jump{
+    animation: anim_21 1.5s infinite alternate;
+    position: absolute;
+    background: url(../img/Ylb1cK5.gif);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 85px;
+    width: 85px;
+    bottom: 410px;
+    right: 235px;
+    transform: rotateY(180deg);
+}
+@keyframes anim_21{
+    0%{
+        bottom: 410px;
+        opacity: 0;
+    }
+    33%{
+        opacity: 0;
+    }
+    34%{
+        opacity: 1;
+    }
+    100%{
+        bottom: 578px;
+    }
+}
+
+.jump1{
+    animation: anim_211 2s infinite alternate;
+    position: absolute;
+    background: url(../img/Ylb1cK5.gif);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 85px;
+    width: 85px;
+    left: 70px;
+    bottom: 230px;
+    transform: rotateY(0deg);
+}
+@keyframes anim_211{
+    0%{
+        bottom: 230px;
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    100%{
+        bottom: 480px;
+    }
+}
+
+#score{
+    position: absolute;
+    background: #fff url(../img/images\ \(2\).jfif) no-repeat 95% 50%;
+    background-size: 25% 80%;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    top: 10px;
+    left: 50%;
+    margin-left: -75px;
+    line-height: 35px;
+    text-indent: 10px;
+    font-size: 20px;
+    font-family: tahoma;
+    font-weight: bolder;
+    color: #666;
+}
+
+#player{
+    /* animation: playeranim_2 0.5s linear both; */
+    position: absolute;
+    /* border: 1px solid #000; */
+    background: url(../img/Untitled-1.png) no-repeat 50% 0%;
+    background-size: 100% 111%;
+    height: 55px;
+    width: 45px;
+    bottom: 40px;
+    left: 0;
+    transition: 0.5s left;
+    /* transform: rotateY(180deg); */
+}
+
+/* background: url(../img/b69040ba12c1b3a9d9d998e3e67154e9.gif) no-repeat 50% 50%;
+background-size: 200% 260%; */
+
+@keyframes playeranim_1{
+    0%{
+        bottom: 40px;
+    }
+    100%{
+        bottom: 160px;
+    }
+}
+@keyframes playeranim_2{
+    0%{
+        left: 480px;
+        bottom: 40px;
+    }
+    50%{
+        bottom: 320px;
+    }
+    100%{
+        bottom: 250px;
+        left: 400px;
+    }
+}
+@keyframes playeranim_3{
+    0%{
+        bottom: 250px;
+    }
+    100%{
+        bottom: 500px;
+    }
+}
+@keyframes playeranim_4{
+    0%{
+        bottom: 250px;
+        left: 200px;
+    }
+    40%{
+        bottom: 550px;
+    }
+    100%{
+        bottom: 420px;
+        left: 480px;
+    }
+}
+@keyframes playeranim_5{
+    0%{
+        bottom: 420px;
+        left: 480px;
+    }
+    40%{
+        bottom: 550px;
+    }
+    100%{
+        bottom: 250px;
+        left: 200px;
+    }
+}
+
+@keyframes playeranim_6{
+    0%{
+        bottom: 420px;
+    }
+    100%{
+        bottom: 580px;
+    }
+}
+@keyframes playeranim_7{
+    0%{
+        bottom: 420px;
+        left: 640px;
+    }
+    50%{
+        bottom: 605px;
+    }
+    100%{
+        bottom: 565px;
+        left: 720px;
+    }
+}
+@keyframes playeranim_8{
+    0%{
+        left: 560px;
+        bottom: 40px;
+    }
+    50%{
+        bottom: 340px;
+    }
+    100%{
+        bottom: 300px;
+        left: 640px;
+    }
+}
+@keyframes playeranim_9{
+    0%{
+        bottom: 250px;
+    }
+    100%{
+        bottom: 325px;
+    }
+}
+@keyframes playeranim_10{
+    0%{
+        bottom: 250px;
+        left: 120px;
+    }
+    50%{
+        bottom: 450px;
+    }
+    100%{
+        bottom: 390px;
+        left: 70px;
+    }
+}
+@keyframes playeranim_11{
+    0%{
+        bottom: 250px;
+        left: 200px;
+    }
+    50%{
+        bottom: 550px;
+    }
+    100%{
+        bottom: 420px;
+        left: 280px;
+    }
+}
+@keyframes playeranim_12{
+    0%{
+        bottom: 420px;
+        left: 280px;
+    }
+    50%{
+        bottom: 550px;
+    }
+    100%{
+        bottom: 250px;
+        left: 200px;
+    }
+}
+@keyframes playeranim_13{
+    0%{
+        bottom: 420px;
+    }
+    100%{
+        bottom: 545px;
+    }
+}
+@keyframes playeranim_14{
+    0%{
+        bottom: 420px;
+        left: 620px;
+    }
+    50%{
+        bottom: 630px;
+    }
+    100%{
+        bottom: 590px;
+        left: 720px;
+    }
+}
+
+#gameover{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+    display: none;
+}
+.gameover{
+    position: absolute;
+    /* border: 1px solid #fff; */
+    height: 50px;
+    width: 220px;
+    top: 60px;
+    left: 50%;
+    margin-left: -110px;
+    line-height: 46px;
+    font-size: 31px;
+    font-family: tahoma;
+    color: #fff;
+}
+.nasor{
+    position: absolute;
+    /* border: 1px solid #fff; */
+    background: url(../img/images\ \(1\).png) no-repeat 100% 50%;
+    background-size: 93% 100%;
+    height: 200px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -178px;
+}
+.playagin{
+    position: absolute;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    bottom: 200px;
+    left: 50%;
+    margin-left: -75px;
+    line-height: 40px;
+    padding-left: 18px;
+    font-size: 29px;
+    font-family: tahoma;
+    color: #000;
+    transform: scale(1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.playagin:hover{
+    transform: scale(1.1);
+}
+
+#nextlevel{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+    display: none;
+}
+.nextlevel{
+    position: absolute;
+    /* border: 1px solid #fff; */
+    height: 50px;
+    width: 264px;
+    top: 60px;
+    left: 50%;
+    margin-left: -132px;
+    line-height: 46px;
+    font-size: 31px;
+    font-family: tahoma;
+    color: #fff;
+}
+.running{
+    animation: run_anim 4s infinite linear;
+    position: absolute;
+    /* border: 1px solid #fff; */
+    background: url(../img/b69040ba12c1b3a9d9d998e3e67154e9.gif) no-repeat 50% 50%;
+    background-size: 140% 140%;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -100px;
+}
+@keyframes run_anim{
+    0%{
+        left: 100px;
+        transform: rotateY(0);
+        margin-left: 0px;
+    }
+    49%{
+        transform: rotateY(0); 
+    }
+    50%{
+        left: 700px;
+        transform: rotateY(180deg);
+    }
+    99%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: 0;
+        margin-left: 0;
+        transform: rotateY(0);
+    }
+}
+.next{
+    position: absolute;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 15px;
+    height: 50px;
+    width: 80px;
+    bottom: 200px;
+    left: 50%;
+    margin-left: -40px;
+    line-height: 40px;
+    padding-left: 9px;
+    font-size: 29px;
+    font-family: tahoma;
+    color: #000;
+    transform: scale(1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.next:hover{
+    transform: scale(1.1);
+}
+.next > a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #222;
+}

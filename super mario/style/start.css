@@ -1,0 +1,614 @@
+body{
+    animation: anim_1 5s infinite alternate;
+    animation-fill-mode: both;
+    /* position: relative; */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+@keyframes anim_1{
+    0%{
+        background: rgb(255, 97, 72);
+    }
+    50%{
+        background: rgb(255, 174, 0);
+    }
+    100%{
+        background: rgb(199, 255, 31);
+    }
+}
+#first_audio{
+    display: none;
+}
+.window{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.screen{
+    position: absolute;
+    background: linear-gradient(rgb(63, 191, 255), #fff 90%);
+    border-radius: 5px;
+    height: 650px;
+    width: 1000px;
+    /* margin: 45px auto; */
+    top: 50%;
+    left: 50%;
+    margin-top: -325px;
+    margin-left: -500px;
+    overflow: hidden;
+}
+.holder{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.start_1{
+    position: absolute;
+    background: linear-gradient(45deg, red , yellow 10% ,red 20% ,yellow 30% , red 40%, yellow 50% ,red 60% , yellow 70% ,red 80% ,yellow 90% , red 100%);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+.start_1 .mario{
+    animation: anim_12 0.4s infinite alternate;
+    position: absolute;
+    border: 50px solid gold;
+    background: url(../img/123-1234727_mario-paper-mario-hd-png-download.png) 50% 50%;
+    background-size: 93% 93%;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    top: 0;
+    left: 50%;
+    margin-top: 120px;
+    margin-left: -190px;
+    transition: 0.5s;
+    /* box-shadow: 0 0 1px 50px gold; */
+    transform: scale(1);
+    cursor: pointer;
+}
+.start_1 .mario:hover{
+    transform: scale(1.1);
+}
+@keyframes anim_12{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+@keyframes anim_13{
+    0%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(1.05);
+    }
+}
+
+.start_2{
+    position: absolute;
+    background: url(../img/f1eef55729fb9e0.gif);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+}
+@keyframes anim_14{
+    0%{}
+    50%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(1.05);
+    }
+}
+
+.logo{
+    animation: anim 0.4s infinite alternate;
+    position: absolute;
+    /* border: 1px solid #000; */
+    /* background: url(../img/Untitled-4.png); */
+    /* background-size: 100% 100%; */
+    top: 0;
+    left: 50%;
+    height: 120px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: -110px;
+    line-height: 90px;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 40px;
+    font-weight: bold;
+    transform: scale(1);
+}
+@keyframes anim{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+.logo > span:nth-child(1){
+    color: red;
+}
+.logo > span:nth-child(2){
+    color: rgb(0, 133, 0);
+}
+.logo > span:nth-child(3){
+    color: rgb(0, 78, 186);
+}
+.logo > span:nth-child(4){
+    color: rgb(255, 153, 0);
+}
+.logo > span:nth-child(5){
+    color: rgb(188, 0, 188);
+}
+.logo > span:nth-child(6){
+    color: yellow;
+}
+.logo > span:nth-child(7){
+    color: red;
+}
+.logo > span:nth-child(8){
+    color: green;
+}
+.logo > span:nth-child(9){
+    color: rgb(255, 145, 0);
+}
+.logo > span:nth-child(10){
+    color: blue;
+}
+.logo > span:nth-child(11){
+    color: yellow;
+}
+
+.box_bottom{
+    position: absolute;
+    /* border: 1px solid #000; */
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+.box_bottom > li{
+    animation: anim_2 1s infinite alternate;
+    position: relative;
+    background: yellow;
+    border-radius: 5px;
+    height: 100%;
+    width: 4%;
+    padding-left: 1%;
+    float: left;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bolder;
+    z-index: 100;
+    box-shadow: 0 0 1px 1px #000 inset;
+    transform: rotate(90deg);
+}
+@keyframes anim_2{
+    0%{
+        line-height: 38px;
+        padding-left: 0.9%;
+    }
+    50%{
+        line-height: 34px;
+        padding-left: 1.1%;
+    }
+    100%{
+        line-height: 39px;
+        padding-left: 1%;
+    }
+}
+.box-mid{
+    position: absolute;
+    /* border: 1px solid #000; */
+    bottom: 250px;
+    right: 250px;
+    height: 40px;
+    width: 240px;
+}
+.box-mid > li{
+    animation: anim_3 1s infinite alternate;
+    position: relative;
+    background: brown;
+    border-radius: 5px;
+    height: 100%;
+    width: 40px;
+    padding-left: 12px;
+    float: left;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bolder;
+    z-index: 100;
+    box-shadow: 0 0 1px 1px #000 inset;
+    transform: rotate(90deg);
+}
+@keyframes anim_3{
+    0%{
+        line-height: 38px;
+        padding-left: 12px;
+    }
+    50%{
+        line-height: 34px;
+        ppadding-left: 14px;
+    }
+    100%{
+        line-height: 39px;
+        padding-left: 10px;
+    }
+}
+
+.culmn{
+    animation: anim_4 1s infinite alternate;
+    position: absolute;
+    background: url(../img/purzen-A-green-cartoon-pipe.png);
+    background-size: 100% 100%;
+    height: 250px;
+    width: 180px;
+    bottom: 30px;
+    right: 15px;
+    z-index: 90;
+}
+@keyframes anim_4{
+    0%{
+        height: 250px;
+    }
+    100%{
+        height: 235px;
+    }
+}
+.jump{
+    animation: anim_5 1.5s infinite alternate;
+    position: absolute;
+    background: url(../img/Ylb1cK5.gif);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 85px;
+    width: 85px;
+    bottom: 300px;
+    right: 66px;
+}
+@keyframes anim_5{
+    0%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 500px;
+    }
+}
+
+.divv{
+    animation: anim_6 6s linear infinite;
+    position: absolute;
+    background: url(../img/aefaf47caa61782884b98d4b0a6f9304_w200.gif);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 100px;
+    width: 100px;
+    bottom: 290px;
+    right: 160px;
+    transform: rotateY(180deg);
+}
+@keyframes anim_6{
+    0%{
+        right: 250px;
+        transform: rotateY(180deg);
+    }
+    48%{
+        right: 400px;
+        transform: rotateY(180deg);
+    }
+    50%{
+        right: 400px;
+        transform: rotateY(0deg);
+    }
+    100%{
+        right: 250px;
+        transform: rotateY(0deg);
+    }
+}
+
+.turtel_1{
+    animation: anim_7 6s linear infinite;
+    position: absolute;
+    background: url(../img/123934-A31577DF-A994-445C-9AFF-022E3670ED44-0-1540500917.gif);
+    background-size: 400% 175%;
+    background-position: 65% 50% ;
+    /* border: 1px solid #000; */
+    border-radius: 40px 20px 0 0;
+    height: 50px;
+    width: 40px;
+    bottom: 40px;
+    right: 960px;
+    transform: rotateY(0deg);
+}
+@keyframes anim_7{
+    0%{
+        right: 960px;
+        transform: rotateY(0deg);
+    }
+    48%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        right: 200px;
+        transform: rotateY(180deg);
+    }
+    98%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        right: 960px;
+        transform: rotateY(0deg);
+    }
+}
+
+.turtel_2{
+    animation: anim_8 7s linear infinite;
+    /* animation-delay: 1s; */
+    position: absolute;
+    background: url(../img/123934-A31577DF-A994-445C-9AFF-022E3670ED44-0-1540500917.gif);
+    background-size: 400% 175%;
+    background-position: 65% 50% ;
+    /* border: 1px solid #000; */
+    border-radius: 40px 20px 0 0;
+    height: 50px;
+    width: 40px;
+    bottom: 40px;
+    right: 300px;
+    transform: rotateY(180deg);
+}
+@keyframes anim_8{
+    0%{
+        right: 300px;
+        transform: rotateY(180deg);
+    }
+    43%{
+        transform: rotateY(180deg);
+    }
+    45%{
+        right: 960px;
+        transform: rotateY(0deg);
+    }
+    93%{
+        right: 200px;
+        transform: rotateY(0deg);
+    }
+    95%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        right: 300px;
+        transform: rotateY(180deg);
+    }
+}
+
+.turtel_3{
+    animation: anim_9 10s linear infinite;
+    /* animation-delay: 1s; */
+    position: absolute;
+    background: url(../img/123934-A31577DF-A994-445C-9AFF-022E3670ED44-0-1540500917.gif);
+    background-size: 400% 175%;
+    background-position: 65% 50% ;
+    /* border: 1px solid #000; */
+    border-radius: 40px 20px 0 0;
+    height: 50px;
+    width: 40px;
+    bottom: 40px;
+    right: 400px;
+    transform: rotateY(180deg);
+}
+@keyframes anim_9{
+    0%{
+        right: 400px;
+        transform: rotateY(180deg);
+    }
+    43%{
+        transform: rotateY(180deg);
+    }
+    45%{
+        right: 960px;
+        transform: rotateY(0deg);
+    }
+    88%{
+        right: 200px;
+        transform: rotateY(0deg);
+    }
+    90%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        right: 400px;
+        transform: rotateY(180deg);
+    }
+}
+
+#let{
+    animation: anim_10 1.4s linear infinite alternate;
+    display: inline-block;
+    position: absolute; 
+    bottom: 350px;
+    left: 100px;
+    padding: 15px 20px;
+    font-size: 34px;
+    font-family: tahoma;
+    font-weight: bolder;
+    color: orange;
+}
+@keyframes anim_10{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        bottom: 350px;
+        left: 100px;
+    }
+    75%{
+        transform: scale(1.2);
+        bottom: 350px;
+        left: 95px;
+    }
+    100%{
+        transform: scale(1.2);
+        bottom: 350px;
+        left: 105px;
+    }
+}
+
+.arro_1{
+    animation: anim_11 0.6s linear infinite alternate;
+    position: absolute;
+    background: url(../img/5063516.png);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 50px;
+    width: 40px;
+    bottom: 352px;
+    left: 40px;
+    transform: rotatez(-90deg);
+}
+.arro_2{
+    animation: anim_11 0.6s linear infinite alternate;
+    position: absolute;
+    background: url(../img/5063516.png);
+    background-size: 100% 100%;
+    /* border: 1px solid #000; */
+    height: 50px;
+    width: 40px;
+    bottom: 352px;
+    left: 270px;
+    transform: rotatez(-90deg);
+}
+@keyframes anim_11{
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#back_1{
+    position: absolute;
+    background: url(../img/back-button-4181668.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    left: 20px;
+    transition: 0.5s;
+    transform: scale(1);
+    overflow: hidden;
+    cursor: pointer;
+}
+#back_1:hover{
+    transform: scale(1.2);
+}
+
+#back_1 > a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+#setting_icon{
+    position: absolute;
+    background: url(../img/738853.png);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    right: 20px;
+    transition: 0.5s;
+    transform: scale(1);
+    cursor: pointer;
+}
+#setting_icon:hover{
+    transform: scale(1.2);
+}
+input{
+    display: none;
+}
+input:checked ~ #setting{
+    animation: anim_15 3s linear both; 
+}
+input ~ #setting{
+    animation: anim_16 2s linear both; 
+}
+#setting{
+    /* animation: anim_14 2s linear both; */
+    position: absolute;
+    background: rgba(8, 107, 5, 0.5);
+    border-radius: 0 0 0 50px;
+    height: 50px;
+    width: 200px;
+    top: -100px;
+    right: 100px;
+    padding-left: 30px;
+    transition: 0.5s;
+    transform-origin: 100% 100%;
+    transform: rotate(-180deg);
+}
+@keyframes anim_15{
+    0%{
+        transform: rotate(-180deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    55%{
+        transform: rotate(-135deg);
+    }
+    78%{
+        transform: rotate(-65deg);
+    }
+    100%{
+        transform: rotate(-90deg) translateX(0);
+    }
+}
+@keyframes anim_16{
+    0%{
+        transform: rotate(-90deg) translateX(0);
+    }
+    100%{
+        transform: rotate(-90deg) translateX(250px);
+    }
+}
+#setting > div{
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transition: 0.2s;
+    transform: rotate(90deg) scale(1);
+    cursor: pointer;
+}
+#setting > div:hover{
+    transform: rotate(90deg) scale(1.1);
+}
+#setting > div:nth-child(1){
+    background: url(../img/4181163.jpg) 50% 50%;
+    background-size: 100% 100%;
+}
+#setting > div:nth-child(2){
+    background: url(../img/4208490.jpg) 50% 50%;
+    background-size: 150% 150%;
+}
