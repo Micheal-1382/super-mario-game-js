@@ -2,14 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="style/reset.css">
-        <link rel="stylesheet" href="style/game.css">
+        <link rel="stylesheet" href="style/start.css">
     </head>
-
     <body>
-
         <div class="window">
             <div class="screen">
                 <div class="holder">
+                    <div id="start_1" class="start_1">
+                        <div class="holder">
+                            <div id="but_1" class="mario"></div>
+                            <audio id="first_audio" controls loop>
+                                <source src="audio/level-clear.mp3">
+                            </audio>
+                        </div>
+                    </div>
+                    <div id="start_2" class="start_2"></div>
+                    <div class="logo"><span>S</span><span>u</span><span>p</span><span>e</span><span>r</span>
+                        <span>m</span><span>a</span><span>m</span><span>a</span><span>l</span><span>y</span>
+                    </div>
                     <ul class="box_bottom">
                         <li> : )</li>
                         <li> : )</li>
@@ -38,92 +48,33 @@
                         <li> : )</li>
                     </ul>
                     <ul class="box-mid">
-                        <li id="brown_1"> : )</li>
-                        <li id="brown_2"> : )</li>
-                        <li id="brown_3"> : )</li>
-                        <li id="brown_4"> : )</li>
-                        <li id="brown_5"> : )</li>
-                        <li id="brown_6"> : )</li>
+                        <li> : (</li>
+                        <li> : (</li>
+                        <li> : (</li>
+                        <li> : (</li>
+                        <li> : (</li>
+                        <li> : (</li>
                     </ul>
-                    <ul class="under-mid">
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                        <li> : )</li>
-                    </ul>
+                    <div class="culmn"></div>
+                    <div class="jump"></div>
+                    <div class="divv"></div>
                     <div class="turtel_1"></div>
                     <div class="turtel_2"></div>
                     <div class="turtel_3"></div>
-                    <div id="back_1"><a href="supermario.html"></a></div>
+                    <div class="arro_1"></div>
+                    <a id="let" href="paly.html">Lets go</a>
+                    <div class="arro_2"></div>
+                    <div id="back_1"></div>
                     <input id="set" type="checkbox">
                     <label for="set" id="setting_icon"></label>
                     <div id="setting">
-                        <div id="agin" style="background:#fff url(img/5791701.jpg) 50% 50%;background-size: 100% 100%;"></div>
-                        <div id="play_pause"></div>
-                    </div>
-                    <div id="coin_1">$</div>
-                    <div id="coin_2">$</div>
-                    <div id="coin_3">$</div>
-                    <div id="coin_4">$</div>
-                    <div id="coin_5">$</div>
-                    <div id="coin_6">$</div>
-                    <div class="culmn"></div>
-                    <div class="culmn1"></div>
-                    <div class="jump"></div>
-                    <div id="score">0</div>
-                    <div id="player"></div>
-                    <div id="gameover">
-                        <div class="gameover">Gameover baby</div>
-                        <div class="nasor"></div>
-                        <div id="playagin" class="playagin">Play agin</div>
-                    </div>
-                    <div id="nextlevel">
-                        <div class="nextlevel">You are wine baby!</div>
-                        <div class="running"></div>
-                        <div id="next" class="next">
-                            <a href="play1.html">Next</a>
-                        </div>
+                        <div id="pause"></div>
+                        <div id="play"></div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <audio id="first_audio" controls loop>
-            <source src="audio/jalal-hemmati---parish-mp3[320].mp3">
-        </audio>
-
-        <audio id="second_audio" controls autoplay>
-            <source src="audio/going-under.mp3">
-        </audio>
-        <audio id="third_audio" controls>
-            <source src="audio/small-jump.mp3">
-        </audio>
-        <audio id="forth_audio" controls>
-            <source src="audio/coin.mp3">
-        </audio>
-        <audio id="fifth_audio" controls>
-            <source src="audio/game-over.mp3">
-        </audio>
-        <audio id="sixs_audio" controls>
-            <source src="audio/super-jump.mp3">
-        </audio>
-        <audio id="seventh_audio" controls>
-            <source src="audio/bowser-falls.mp3">
-        </audio>
-        <audio id="eighth_audio" controls>
-            <source src="audio/life-lost.mp3">
-        </audio>
     </body>
 
-    <script src="script/game_1.js"></script>
-    
+    <script src="script/game.js"></script>
 </html>
